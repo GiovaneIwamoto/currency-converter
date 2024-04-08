@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "63226b3f-663c-4c02-be9b-edf6054d017b",
+		"name": "Currency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25706688"
+	},
+	"item": [
+		{
+			"name": "Convert",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/convert/?fromCurrency=BTC&toCurrency=BRL",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"convert",
+						""
+					],
+					"query": [
+						{
+							"key": "fromCurrency",
+							"value": "BTC"
+						},
+						{
+							"key": "toCurrency",
+							"value": "BRL"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
