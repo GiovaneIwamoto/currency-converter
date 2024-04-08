@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000bd;
+}
+
+h1 {
+    color: rgba(255, 208, 0, 0.911);
+}
+
+.container-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    border: 2px solid rgb(255, 208, 0); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    width: 300px;
+}
+
+input[type='number'] {
+    width: 150px;
+}
+
+.container-result {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.result {
+    color: rgb(43, 255, 0);
+    font-size: 15px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.currency {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+select,
+input[type='number'] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.amount-display {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #fff;
+    color: #000;
+    margin-left: auto;
+}
+
+button {
+    background-color: rgb(255, 225, 0);
+    padding: 12px 20px; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: rgb(52, 195, 50); 
+}
