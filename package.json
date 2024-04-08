@@ -1,0 +1,19 @@
+{
+    "name": "sprint_02_pb",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon src/app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.19.2",
+        "node-fetch": "^3.3.2",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.0"
+    }
+}
