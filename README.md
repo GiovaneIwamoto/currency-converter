@@ -1,4 +1,4 @@
-# CONVERSOR DE MOEDAS
+# CURRENCY CONVERTER
 
 ### **OVERVIEW**
 
@@ -6,11 +6,11 @@ Currency converter that allows users to convert between different types of monet
 
 ### **INSTALLATION GUIDE**
 
-Clone this repository [currency-converter](https://github.com/Compass-pb-aws-2024-MARCO/sprint-2-pb-aws-marco) and navigate to the _equipe-7_ branch.
+Clone this repository [currency-converter](https://github.com/GiovaneIwamoto/currency-converter.git) and navigate to the _main_ branch.
 
 Run `npm install` to install all the dependencies needs.
 
-Run `npm run dev` to start the local server hosted at http://localhost:3000.
+Run `npm run dev` to start the local server hosted at `http://localhost:3000`.
 
 ### **API ENDPOINTS**
 
@@ -58,9 +58,8 @@ The _GetCurrencyData_ function in the services folder sends a request to the API
 
 This retrieved data is then utilized within the application for currency conversion purposes. In case of any errors during the API request or data extraction process, appropriate error handling mechanisms are in place to ensure smooth functioning of the application.
 
-### **AUTHORS**
+### **AUTHOR**
 
--   Giovane Hashinokuti Iwamoto
--   Gustavo Serra Vasconcelos
--   Vinicius Marques de Melo
--   Everton de Oliveira
+Giovane Hashinokuti Iwamoto - Computer Science student at UFMS - Brazil - MS
+
+I am always open to receiving constructive criticism and suggestions for improvement in my developed code. I believe that feedback is an essential part of the learning and growth process, and I am eager to learn from others and make my code the best it can be. Whether it's a minor tweak or a major overhaul, I am willing to consider all suggestions and implement the changes that will benefit my code and its users.
