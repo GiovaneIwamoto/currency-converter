@@ -50,7 +50,7 @@ The _GetCurrencyData_ function in the services folder sends a request to the API
 
 ```
 {
-    "name": "Dólar Americano/Euro",
+    "name": "US Dollar/Euro",
     "high": "0.9227",
     "create_date": "2024-04-07 18:03:05"
 }
