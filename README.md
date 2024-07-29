@@ -8,7 +8,7 @@ Currency converter that allows users to convert between different types of monet
 
 ---
 
-### **API ENDPOINTS**
+### **API ENDPOINT**
 
 > [!TIP]
 > Import the Postman JSON file, which can be found in the root directory of the project, into Postman. This file will serve as a template for conducting API request testing, providing predefined configurations.
