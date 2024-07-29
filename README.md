@@ -11,34 +11,33 @@ Currency converter that allows users to convert between different types of monet
 ### **API ENDPOINTS**
 
 > [!IMPORTANT]
-> The base route for conversion-related endpoint is /convert, serving as the primary access point for conversion operation.
+> The base route for conversion-related endpoint is /convert serving as the primary access point.
 
 | **HTTP VERB** | **ENDPOINT**                        | **ACTION**        |
 | ------------- | ----------------------------------- | ----------------- |
 | GET           | `/?fromCurrency=USD&toCurrency=EUR` | Retrieve cotation |
 
 > [!TIP]
-> Import the Postman JSON file, which can be found in the root directory of the project, into Postman. This file will serve as a template for conducting API request testing, providing predefined configurations and requests for ease of use.
+> Import the Postman JSON file, which can be found in the root directory of the project, into Postman. This file will serve as a template for conducting API request testing, providing predefined configurations.
 
 ---
 
 ### **APP USAGE**
 
-```ruby
-"SELECT CURRENCIES": Choose the currency you want to convert from in the dropdown menu and the currency you want to convert to.
-
-"ENTER AMOUNT": Enter the amount you want to convert in the input field. By default, it is set to 1.
-
-"RESULT DISPLAY": The converted amount, conversion rate and the date of the conversion will be displayed.
-```
-
 ![Converter Image](/img/converter_image.png)
+
+SELECT CURRENCIES: Choose the currencies you want to convert from the dropdown menu.
+
+ENTER AMOUNT: Enter the amount you want to convert in the input field.
+
+RESULT DISPLAY: The converted amount, conversion rate and the date of the conversion will be displayed.
 
 ---
 
 ### EXTERNAL API CONSUME:
 
-This application consumes an external API to fetch currency conversion data. The API used is provided by [awesome-api](economia.awesomeapi.com.br) and offers currency conversion rates between different currency pairs.
+> [!WARNING]
+> This application consumes an external API to fetch currency conversion data. The API used is provided by awesome-api from economia.awesomeapi.com.br and offers currency conversion rates between different currency pairs.
 
 The _GetCurrencyData_ function in the services folder sends a request to the API endpoint with the specified _fromCurrency_ and _toCurrency_ parameters. Upon receiving a successful response, it extracts relevant information such as the currency pair name, cotation, and the creation date of the data returning the following JSON body:
 
@@ -57,7 +56,7 @@ The _GetCurrencyData_ function in the services folder sends a request to the API
 
 ### **INSTALLATION GUIDE**
 
-Clone this repository [currency-converter](https://github.com/GiovaneIwamoto/currency-converter.git) and navigate to the main branch.
+Clone this repository https://github.com/GiovaneIwamoto/currency-converter.git and navigate to the main branch.
 
 Run the following command to install all the dependencies needs.
 
