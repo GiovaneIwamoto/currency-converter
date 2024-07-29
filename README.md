@@ -4,23 +4,23 @@
 
 Currency converter that allows users to convert between different types of monetary units according to their choice. The app fetches the exchange rates by consuming an external API and displays the conversion result to the user.
 
-### **INSTALLATION GUIDE**
+[![Icons](https://skillicons.dev/icons?i=html,css,js,postman,nodejs&theme=dark)](https://skillicons.dev)
 
-Clone this repository [currency-converter](https://github.com/GiovaneIwamoto/currency-converter.git) and navigate to the _main_ branch.
-
-Run `npm install` to install all the dependencies needs.
-
-Run `npm run dev` to start the local server hosted at `http://localhost:3000`.
+---
 
 ### **API ENDPOINTS**
+
+> [!IMPORTANT]
+> The base route for convert endpoints is /convert.
 
 | **HTTP VERB** | **ENDPOINT**                        | **ACTION**        |
 | ------------- | ----------------------------------- | ----------------- |
 | GET           | `/?fromCurrency=USD&toCurrency=EUR` | Retrieve cotation |
 
-The base route for convert endpoints is `/convert`.
+> [!TIP]
+> Import the Postman Json file located in the root directory of the project into Postman as a template for API request testing.
 
-Import the _Postman.json_ file located in the root directory of the project into Postman as a template for API request testing.
+---
 
 ### **APP USAGE**
 
@@ -32,15 +32,7 @@ Import the _Postman.json_ file located in the root directory of the project into
 
 ![Converter Image](/img/converter_image.png)
 
-### **TECHNOLOGIES USED**
-
-The following technologies were used in the development of this project:
-
-`Node`: A JavaScript runtime built on Chrome's V8 JavaScript engine that allows for server-side scripting.
-
-`Express`: A fast and minimalist web framework for Node.js used to create server applications.
-
-`Node-Fetch`: A module that provides a simple and efficient way to make HTTP requests in Node.js environments. It allows to fetch resources from remote servers.
+---
 
 ### EXTERNAL API CONSUME:
 
@@ -48,7 +40,7 @@ This application consumes an external API to fetch currency conversion data. The
 
 The _GetCurrencyData_ function in the services folder sends a request to the API endpoint with the specified _fromCurrency_ and _toCurrency_ parameters. Upon receiving a successful response, it extracts relevant information such as the currency pair name, cotation, and the creation date of the data returning the following JSON body:
 
-```
+```json
 {
     "name": "US Dollar/Euro",
     "high": "0.9227",
@@ -56,10 +48,31 @@ The _GetCurrencyData_ function in the services folder sends a request to the API
 }
 ```
 
-This retrieved data is then utilized within the application for currency conversion purposes. In case of any errors during the API request or data extraction process, appropriate error handling mechanisms are in place to ensure smooth functioning of the application.
+> [!NOTE]
+> This retrieved data is then utilized within the application for currency conversion purposes. In case of any errors during the API request or data extraction process, appropriate error handling mechanisms are in place to ensure smooth functioning of the application.
+
+---
+
+### **INSTALLATION GUIDE**
+
+Clone this repository [currency-converter](https://github.com/GiovaneIwamoto/currency-converter.git) and navigate to the _main_ branch.
+
+Run the following command to install all the dependencies needs.
+
+```ruby
+$ npm install
+```
+
+Run the following command to start the local server hosted at http://localhost:3000.
+
+```ruby
+$ npm run dev
+```
+
+---
 
 ### **AUTHOR**
 
-Giovane Hashinokuti Iwamoto - Computer Science student at UFMS - Brazil - MS
+-   Giovane Hashinokuti Iwamoto - Computer Science student at UFMS - Brazil - MS
 
 I am always open to receiving constructive criticism and suggestions for improvement in my developed code. I believe that feedback is an essential part of the learning and growth process, and I am eager to learn from others and make my code the best it can be. Whether it's a minor tweak or a major overhaul, I am willing to consider all suggestions and implement the changes that will benefit my code and its users.
