@@ -11,24 +11,26 @@ Currency converter that allows users to convert between different types of monet
 ### **API ENDPOINTS**
 
 > [!IMPORTANT]
-> The base route for convert endpoints is /convert.
+> The base route for conversion-related endpoint is /convert, serving as the primary access point for conversion operation.
 
 | **HTTP VERB** | **ENDPOINT**                        | **ACTION**        |
 | ------------- | ----------------------------------- | ----------------- |
 | GET           | `/?fromCurrency=USD&toCurrency=EUR` | Retrieve cotation |
 
 > [!TIP]
-> Import the Postman Json file located in the root directory of the project into Postman as a template for API request testing.
+> Import the Postman JSON file, which can be found in the root directory of the project, into Postman. This file will serve as a template for conducting API request testing, providing predefined configurations and requests for ease of use.
 
 ---
 
 ### **APP USAGE**
 
-**Select Currencies**: Choose the currency you want to convert from in the first dropdown menu and the currency you want to convert to in the second dropdown menu.
+```ruby
+"SELECT CURRENCIES": Choose the currency you want to convert from in the dropdown menu and the currency you want to convert to.
 
-**Enter Amount**: Enter the amount you want to convert in the input field. By default, it is set to 1.
+"ENTER AMOUNT": Enter the amount you want to convert in the input field. By default, it is set to 1.
 
-**Result Display**: The converted amount will be shown in the _amount-to_ section. Additionally, the conversion rate and the date of the conversion will be displayed in the result section.
+"RESULT DISPLAY": The converted amount, conversion rate and the date of the conversion will be displayed.
+```
 
 ![Converter Image](/img/converter_image.png)
 
@@ -55,7 +57,7 @@ The _GetCurrencyData_ function in the services folder sends a request to the API
 
 ### **INSTALLATION GUIDE**
 
-Clone this repository [currency-converter](https://github.com/GiovaneIwamoto/currency-converter.git) and navigate to the _main_ branch.
+Clone this repository [currency-converter](https://github.com/GiovaneIwamoto/currency-converter.git) and navigate to the main branch.
 
 Run the following command to install all the dependencies needs.
 
