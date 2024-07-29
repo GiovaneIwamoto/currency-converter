@@ -10,15 +10,15 @@ Currency converter that allows users to convert between different types of monet
 
 ### **API ENDPOINTS**
 
-> [!IMPORTANT]
-> The base route for conversion-related endpoint is /convert serving as the primary access point.
+> [!TIP]
+> Import the Postman JSON file, which can be found in the root directory of the project, into Postman. This file will serve as a template for conducting API request testing, providing predefined configurations.
 
 | **HTTP VERB** | **ENDPOINT**                        | **ACTION**        |
 | ------------- | ----------------------------------- | ----------------- |
 | GET           | `/?fromCurrency=USD&toCurrency=EUR` | Retrieve cotation |
 
-> [!TIP]
-> Import the Postman JSON file, which can be found in the root directory of the project, into Postman. This file will serve as a template for conducting API request testing, providing predefined configurations.
+> [!IMPORTANT]
+> The base route for conversion-related endpoint is /convert serving as the primary access point.
 
 ---
 
@@ -26,18 +26,18 @@ Currency converter that allows users to convert between different types of monet
 
 ![Converter Image](/img/converter_image.png)
 
-SELECT CURRENCIES: Choose the currencies you want to convert from the dropdown menu.
+**SELECT CURRENCIES**: Choose the currencies you want to convert from the dropdown menu.
 
-ENTER AMOUNT: Enter the amount you want to convert in the input field.
+**ENTER AMOUNT**: Enter the amount you want to convert in the input field.
 
-RESULT DISPLAY: The converted amount, conversion rate and the date of the conversion will be displayed.
+**RESULT DISPLAY**: The converted amount, conversion rate and the date of the conversion will be displayed.
 
 ---
 
 ### EXTERNAL API CONSUME:
 
 > [!WARNING]
-> This application consumes an external API to fetch currency conversion data. The API used is provided by awesome-api from economia.awesomeapi.com.br and offers currency conversion rates between different currency pairs.
+> This application consumes an external API to fetch currency conversion data. The API used is provided by awesome-api from economia.awesomeapi.com.br offering currency conversion rates.
 
 The _GetCurrencyData_ function in the services folder sends a request to the API endpoint with the specified _fromCurrency_ and _toCurrency_ parameters. Upon receiving a successful response, it extracts relevant information such as the currency pair name, cotation, and the creation date of the data returning the following JSON body:
 
